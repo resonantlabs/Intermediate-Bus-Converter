@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "stm32g0xx_hal.h": "c",
+        "hw_config.h": "c"
+    }
+}

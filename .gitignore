@@ -1,0 +1,15 @@
+*.o
+*.elf
+*.bin
+*.map
+*.lst
+*.ipch
+*.hex
+*.dfu
+Drivers
+.vscode/.cortex-debug.peripherals.state.json
+.vscode/.cortex-debug.registers.state.json
+.vscode/BROWSE.VC.DB
+.vscode/BROWSE.VC.DB-shm
+.vscode/BROWSE.VC.DB-wal
+.vscode/BROWSE.VC.2.DB
