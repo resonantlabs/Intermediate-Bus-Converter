@@ -25,8 +25,8 @@ Also remember that these are switching converters so Power In = Power Out. So if
 3. SSR or Secondary Side Rectification are MOSFETs acting like diodes for rectification. They are typically driver by a FET or SSR driver
 4. LC Filter. These are typically small valued who purpose is to smooth out any switching noise
 
-[!NOTE]
-See if you can identify all the components in the schematic of a 5:1 IBC. [IBC-Schematic](/PCB/IBC-Schematic.PDF)
+>[!NOTE]
+>See if you can identify all the components in the schematic of a 5:1 IBC. [IBC-Schematic](/PCB/IBC-Schematic.PDF)
 
 ## Why Use IBCs
 1. High Efficiency, up to 98%
