@@ -86,7 +86,7 @@ The example below is a power system that accepts 48Vin +/- 2.5V and has POL outp
     - Don't have to worry about system response of di/dt events of downstream converters
 - IBC systems are easier to cool as the FETs dissipate less power
 
-## I need your help
+## I need your help!
 
 Most engineers who design electronics are quite comfortable using buck and boost converters for their designs. The ICs are typically easy to use and the manufactures provide lots of help to the get your project off the ground.
 
