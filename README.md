@@ -100,6 +100,8 @@ I need people to help me out on this:
 - Incorporate this design or a modified version into your application
 - Help me organize and write manageable code
 
+![IBC PCB](/assets/IBC-PCB.png)
+![IBC Schematic](/assets/IBC-SCH.png)
 ![IBC Prototype](/assets/IBC-Prototype.png)
 
 >[!Note]
