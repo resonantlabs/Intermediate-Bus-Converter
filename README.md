@@ -57,7 +57,7 @@ Radiated and Conducted Noise is generally reduced with an IBC as compared to a t
 ![Waveform comparison](/assets/IBC-Waveforms.png)
 
 ### 3. Extremely Robust and Stable
-IBC's have are not regulated. This means there are:
+IBC's are not regulated. T It does not try and maintain a constant output voltage. This means there are:
 - No Compensation Network
 - No Stability Issues
 - Extremely fast response due to high bandwidth   
