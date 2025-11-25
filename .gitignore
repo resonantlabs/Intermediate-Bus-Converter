@@ -6,7 +6,7 @@
 *.ipch
 *.hex
 *.dfu
-Drivers
+build
 .vscode/.cortex-debug.peripherals.state.json
 .vscode/.cortex-debug.registers.state.json
 .vscode/BROWSE.VC.DB

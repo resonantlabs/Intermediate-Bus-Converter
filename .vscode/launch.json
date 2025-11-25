@@ -11,7 +11,7 @@
             "request": "launch",
             "servertype": "jlink",
             "cwd": "${workspaceRoot}",
-            "executable": "./obj/firmware.elf",
+            "executable": "${command:cmake.launchTargetPath}",
             "name": "Debug (jlink)",
             "device": "STM32G030K6",
             "svdFile": "${workspaceRoot}/STM32G030.svd",

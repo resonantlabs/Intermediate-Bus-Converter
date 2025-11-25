@@ -9,7 +9,7 @@ SOFTWARE_VERSION = 1
  
 #CMSIS FIles 
 CFILES = stm32g0xx_it.c system_stm32g0xx.c
-AFILES = startup_stm32g030xx.s
+AFILES = startup_stm32g030xx.s tx_initialize_low_level.s
 
 #Library Files
 CFILES += stm32g0xx_hal_gpio.c 
@@ -24,17 +24,17 @@ CFILES += stm32g0xx_hal_dma.c
 
 #Application Files
 
-XFILES += main.c hw_config.c scheduler.c pwm.c adc.c
-
+XFILES += main.c hw_config.c pwm.c adc.c
 
 #Libraries
-OFILES = 
+OFILES = libthreadx.a
 
 OUTDIR = obj
 OUTBASE = firmware
 STM32CubeG0 = C:/Libraries/STM32CubeG0/Drivers
-VPATH += $(STM32CubeG0)/stm32g0xx_HAL_Driver/Src 
-
+THREADX = C:/Libraries/threadx
+VPATH = $(STM32CubeG0)/stm32g0xx_HAL_Driver/Src 
+VPATH += $(THREADX)/build_m0
 VPATH += APP CONFIG SCHED
 
 BIN = $(OUTDIR)/$(OUTBASE).hex
@@ -55,15 +55,17 @@ INCLUDES =  -I. -I APP -I CONFIG -I SCHED
 INCLUDES += -I $(STM32CubeG0)/CMSIS/Device/ST/stm32g0xx/Include
 INCLUDES += -I $(STM32CubeG0)/CMSIS/Include
 INCLUDES += -I $(STM32CubeG0)/stm32g0xx_HAL_Driver/Inc
+INCLUDES += -I $(THREADX)/common/inc
+INCLUDES += -I $(THREADX)/ports/cortex_m0/gnu/inc
 
 
-
-CFLAGS=	-Os\
+CFLAGS=	-Og\
 		-c\
 		-g\
 		-DHARDWARE_VERSION=$(HARDWARE_VERSION)\
 		-DSOFTWARE_VERSION=$(SOFTWARE_VERSION)\
-		-DSTM32G070xx\
+		-DSTM32G030xx\
+		-DTX_INCLUDE_USER_DEFINE_FILE\
 		-mthumb\
 		-mcpu=$(PART)\
 		-Wall\

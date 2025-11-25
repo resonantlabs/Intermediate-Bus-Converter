@@ -1,26 +1,8 @@
 {
     "configurations": [
         {
-            "name": "ARM",
-            "includePath": [
-                "${workspaceRoot}",
-                "${workspaceRoot}/APP",
-                "${workspaceRoot}/CONFIG",
-                "${workspaceRoot}/SCHED",
-                "${config:STM32CubeG0}/Drivers/CMSIS/Device/ST/STM32G0xx/Include",
-                "${config:STM32CubeG0}/Drivers/CMSIS/Core/Include",
-                "${config:STM32CubeG0}/Drivers/STM32G0xx_HAL_Driver/Inc"
-
-            ],
-            "defines": [
-                "HARDWARE_VERSION",
-                "SOFTWARE_VERSION",
-                "STM32G070xx",
-                ""
-            ],
-            "intelliSenseMode": "windows-gcc-arm",
-            "cStandard": "c11",
-            "cppStandard": "c++17"
+            "name": "STM32",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

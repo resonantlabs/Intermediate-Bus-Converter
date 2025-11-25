@@ -25,10 +25,12 @@
 TIM_HandleTypeDef htim1;
 
 #define PRESCALER_VALUE 0
-#define PERIOD_VALUE 200 //~300kHz
-#define DUTY1_VALUE 0
-#define PHASE1_VALUE 200
-#define DUTY2_VALUE 200
+#define PERIOD_VALUE (200) //~300kHz
+
+#define DUTY1_VALUE (100)
+#define PHASE1_VALUE (100)
+
+#define DUTY2_VALUE (200)
 #define PHASE2_VALUE 0
 
 /**

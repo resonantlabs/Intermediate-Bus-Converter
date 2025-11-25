@@ -78,25 +78,25 @@ void SVC_Handler(void)
 {
 }
 
-/**
-  * @brief  This function handles PendSVC exception.
-  * @param  None
-  * @retval None
-  */
-void PendSV_Handler(void)
-{
-}
+// /**
+//   * @brief  This function handles PendSVC exception.
+//   * @param  None
+//   * @retval None
+//   */
+// void PendSV_Handler(void)
+// {
+// }
 
-/**
-  * @brief  This function handles SysTick Handler.
-  * @param  None
-  * @retval None
-  */
+// /**
+//   * @brief  This function handles SysTick Handler.
+//   * @param  None
+//   * @retval None
+//   */
 void SysTick_Handler(void)
 {
 
-  ++elapsed_ticks;
-  idle = 0;
+  // ++elapsed_ticks;
+  // idle = 0;
   HAL_IncTick();
 
 }
@@ -116,7 +116,7 @@ void DMA1_Channel1_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
 
   /* USER CODE END DMA1_Channel1_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_adc1);
+  //HAL_DMA_IRQHandler(&hdma_adc1);
   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
@@ -129,7 +129,7 @@ void DMA1_Channel1_IRQHandler(void)
   */
 void ADC1_IRQHandler(void)
 {
-  HAL_ADC_IRQHandler(&hadc1);
+  //HAL_ADC_IRQHandler(&hadc1);
 }
 
 
